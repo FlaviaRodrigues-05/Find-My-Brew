@@ -1,0 +1,227 @@
+:root {
+    --primary-bg: #F9F3E5;        
+    --secondary-bg: #EAE0C7;     
+    --accent-main: #8D6E63;      
+    --accent-highlight: #A1887F; 
+    --accent-pop: #8f6c44;       
+    --text-dark: #3E3E3E;
+    --text-light: #FDFDFD;
+    --shadow-color: rgba(0, 0, 0, 0.15);
+}
+
+body{
+    font-family:'Georgia',serif;
+    background-color: var(--primary-bg);
+    color: var(--text-dark);
+    margin:0;
+    padding:20px;
+    line-height:1.6;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    min-height:100vh;
+
+    background-image: url('download.gif'); 
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+header {
+    
+    border-radius: 25px; 
+    
+    text-align: center;
+    background-color: rgba(234, 224, 199, 0.8);    border: 3px dashed var(--accent-highlight); 
+    
+    max-width: 800px;
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+main {
+    /* ENSURE BACKGROUND IS SOLID HERE */
+    background-color: rgba(234, 224, 199, 0.8); /* Use the light cream color */
+    
+    /* These styles define the main card shape and spacing */
+    padding: 30px;
+    border-radius: 25px; 
+    border: 3px dashed var(--accent-highlight); 
+    max-width: 800px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+header p{
+    color: var(--text-dark);
+    font-size: 1.2em;
+    font-weight: bold; 
+    text-shadow: 1px 1px 1px var(--secondary-bg); /* Soft shadow */
+    padding: 5px 0 10px;
+
+}
+
+h1{
+    color:var(--accent-main);
+    font-family:'Sacramento' , cursive;
+    font-size: 3.5em;
+    margin-bottom: 5px;
+    position: relative;
+    
+}
+
+h1.icon{
+    color:var(--accent-pop);
+    font-size:1.2em;
+    vertical-align:middle;
+    margin:0.8px;
+    filter:drop-shadow(0 1px 1px rgba(0,0,0,0.2));
+
+}
+
+h2{
+    color:var(--accent-pop);
+    border-bottom: 2px dashed var(--accent-highlight);
+    padding-bottom: 8px;
+    margin-top: 30px;
+    font-size: 1.6em;
+    font-weight: bold;
+
+}
+
+h2:first-of-type{
+    margin-top:0;
+}
+
+#location-input{
+    text-align:center;
+    margin-bottom:20px;
+}
+#location-input button {
+    margin: 5px 10px; /* Add some space between the buttons */
+}
+
+button{
+    background-color:var(--accent-pop);
+    color:var(--text-light);
+    border: none;
+    padding: 15px 25px;
+    border-radius: 50px;
+    font-size:1.2em;
+    cursor: pointer;
+    transition:background-color 0.3s ease,transform 0.2s ease;
+    box-shadow: 0 3px 6px var(--shadow-color);
+    font-family: 'Georgia' , serif;
+    font-weight: bold;
+}
+
+button:hover{
+    background-color:#B2844F;
+    transform: translateY(-2px);
+
+}
+
+#cafe-cards-container{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:20px;
+    padding:20px;
+}
+
+.cafe-card{
+    background-color: var(--secondary-bg);
+    border: 2px dashed var(--accent-highlight);
+    border-radius:18px;
+    box-shadow:none;
+    overflow: hidden;
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+
+.cafe-card:hover{
+    transform: translateY(-5px);
+
+}
+
+
+
+.cafe-card-name{
+    font-size: 1.5em;
+    font-weight: bold;
+    color: var(--accent-brown);
+    margin: 5px 0 10px;
+
+}
+
+.cafe-card-rating{
+    font-size: 1.1em;
+    color: var(--accent-orange);
+    margin-bottom:10px ;
+
+}
+
+.cafe-card-rating span{
+    margin-right:5px;
+}
+
+.cafe-card-save-prompt{
+    font-style: italic;
+    font-size: 0.9em;
+    color: var(--text-dark);
+    margin-top: 10px;
+
+}
+#map {
+   
+    height: 400px; 
+    
+    width: 100%; 
+    
+   border: 3px dashed var(--accent-highlight);
+    border-radius: 25px; 
+    box-shadow: none; 
+    background-color: var(--secondary-bg);
+}
+
+
+.hidden{
+    display:none;
+}
+
+.error-message{
+    color:#C0392B ;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#loading-spinner {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid var(--accent-orange);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 1s linear infinite;
+    margin: 20px auto;
+}
+
+
+
+footer {
+    text-align: center;
+    font-size: 0.9em;
+    background-color: rgba(234, 224, 199, 0.8);
+    padding: 10px;
+    border-radius: 25px; 
+    border: 3px dashed var(--accent-highlight); 
+    max-width: 800px;
+    width: 100%;
+    margin-top: 30px;
+    color: var(--text-dark);
+}

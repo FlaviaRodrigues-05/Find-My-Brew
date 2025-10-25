@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en".
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content"width=device-width , intital-scale="1.0">
+    <title> Find My Brew</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <h1><span class="icon">☕</span> Find My Brew <span class="icon">☕</span>
+        </h1>
+        <p> Find the perfect spot for your next coffee break!</p>
+    </header>
+
+    <main>
+
+        <section id="location-input">
+            <button id="find-my-location-btn">Find Cafes Near Me</button>
+    
+            <button id="search-map-btn" class="hidden">Search This Area</button> 
+            <button id="show-saved-btn">My Favourite Cafe's</button> 
+            <div id="loading-spinner" class="hidden"></div>
+            <div id="loading-spinner" class="hidden"></div>
+            <p id="location-error" class="error-message"></p>
+        </section>
+
+        <section id="cafe-results">
+            <h2> Nearby Cozy Spots:</h2>
+            <div id="cafe-cards-container"></div>
+        </section>
+
+        <section id="map-container">
+            <h2>Map View:</h2>
+            <div id="map"></div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Cozy Corner Finders. Powered by Coffee.</p>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    </script>    
+    <script src="script.js"></script>
+</body>
+</html>
